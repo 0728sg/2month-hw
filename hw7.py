@@ -2,6 +2,7 @@ import sqlite3 as sql3
 with sql3.connect('employees.db') as connection:
     cursor = connection.cursor()
 
+
     cursor.execute('''CREATE TABLE IF NOT EXISTS students(
     ID STRING NOT NULL , 
     fulname INTEGER NOT NULL ,
